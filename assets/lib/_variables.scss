@@ -1,6 +1,7 @@
 $base-font-size: 16 !default;
 
 // -------------- BASE PALETTE ---------- //
+
 $color-white: #fff;
 $color-off-white: #f5f7f7;
 $color-white-translucent: rgba(255, 255, 255, 0.2);
@@ -76,15 +77,19 @@ $color-orange-dark: #c95d2d;
 $color-yellow-light: #ead548;
 $color-yellow-dark: #daaf2d;
 
-
-
 // -------------- COLORS --------------- //
+
+// Headings
+$color-heading-default: $color-true-black;
 
 // Breadcrumbs
 $breadcrumbs-background-color: $color-grey-pale !default;
 $breadcrumbs-divider-color: $color-bluegrey-dark;
 
 $related-categories-heading: $color-black;
+
+// Links
+$color-link-default: $color-blue-cerulean;
 
 // Navigation Links
 $color-link-nav: $color-green-quinary !default;

@@ -103,23 +103,23 @@
 
 %heading-large,
 .heading-large {
-  @include heading(32, 36);
-  @extend %font-heading-heavy;
+  @include heading(36, 42);
+  @extend %font-heading-medium;
   color: $color-heading-default;
 
-  @include respond-to($mq-m) {
-    @include heading(40, 48);
+  @include respond-to($mq-s) {
+    @include heading(48, 50);
   }
 }
 
 %heading-medium,
 .heading-medium {
-  @include heading(24, 30);
+  @include heading(28, 30);
   @extend %font-heading-heavy;
-  color: $color-heading-medium;
+  color: $color-heading-default;
 
-  @include respond-to($mq-m) {
-    @include heading(28, 36);
+  @include respond-to($mq-l) {
+    @include heading(30, 36);
   }
 }
 
