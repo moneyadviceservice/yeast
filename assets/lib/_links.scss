@@ -32,7 +32,7 @@
 
 %button-as-link,
 .button-link {
-  @extend a;
+  @extend a !optional;
   background: transparent;
   border: none;
 }
