@@ -72,11 +72,11 @@ $color-red-dark: #af2745;
 
 $color-orange-medium: #f06431;
 $color-orange-dark: #c95d2d;
+$color-cinnabar: #e64e20;
+$color-flamingo: #f3641e;
 
 $color-yellow-light: #ead548;
 $color-yellow-dark: #daaf2d;
-
-
 
 // -------------- COLORS --------------- //
 
@@ -168,6 +168,10 @@ $color-call-us-number: $color-green-primary;
 
 // MAS Blog
 $color-mas-blog-blue: $color-blue-cerulean !default;
+
+// Newsletter signup
+$color-newsletter: $color-cinnabar;
+$color-newsletter-active: $color-flamingo;
 
 // -------------- OTHER --------------- //
 
