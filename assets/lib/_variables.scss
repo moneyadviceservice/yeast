@@ -1,5 +1,7 @@
 $base-font-size: 16 !default;
 
+$sprite-background-size: 550px;
+
 // -------------- BASE PALETTE ---------- //
 $color-white: #fff;
 $color-off-white: #f5f7f7;
@@ -76,17 +78,32 @@ $color-orange-dark: #c95d2d;
 $color-yellow-light: #ead548;
 $color-yellow-dark: #daaf2d;
 
-// -------------- COLORS --------------- //
+
+// -------------- Component colours --------------- //
+
+// Typography
+$color-horizontal-rule: $color-grey-paleo;
+$color-heading-default: $color-green-secondary;
+$color-heading-medium: $color-green-dark;
+$color-text-default: $color-grey-primary;
+$color-heading-extra-small: $color-black;
+$color-text-icon: $color-white;
+$color-paragraph-intro: $color-grey-primary;
+
+// Default Links
+$color-link-default: $color-blue-medium;
+$color-link-visited: $color-blue-dark;
+$color-link-focus: $color-blue-light;
 
 // Breadcrumbs
-$breadcrumbs-background-color: $color-grey-pale !default;
+$breadcrumbs-background-color: $color-grey-pale;
 $breadcrumbs-divider-color: $color-bluegrey-dark;
 
 $related-categories-heading: $color-black;
 
 // Navigation Links
-$color-link-nav: $color-green-quinary !default;
-$color-link-nav-visited: $color-green-quinary !default;
+$color-link-nav: $color-green-quinary;
+$color-link-nav-visited: $color-green-quinary;
 
 // Article Links
 $color-related-links-background: $color-blue-pale !default;
@@ -157,6 +174,17 @@ $color-contact-heading: $color-black;
 $color-contact-border: $color-grey-palest;
 $color-telephone-number-hover: $color-white;
 
+// Tables
+$color-table-heading: $color-grey-nine;
+$color-table-background: $color-grey-nine;
+$color-table-background-alt: $color-grey-ten;
+$color-table-border: $color-green-one;
+
+// Lists
+$color-list-bullet: $color-green-secondary;
+$color-list-yes: $color-green-secondary;
+$color-list-no: $color-red-dark;
+
 // Article Page
 $related-links-border: 1px solid $color-grey-palest !default;
 $related-links-heading: $color-black;
@@ -170,6 +198,70 @@ $color-mas-blog-blue: $color-blue-cerulean !default;
 // Newsletter signup
 $color-newsletter: $color-green-primary;
 $color-newsletter-active: $color-green-secondary;
+
+// Inset block
+$color-inset-block-border: $color-blue-medium;
+
+// Forms
+$input-height: $baseline-unit*5;
+$color-input-text-color: $color-black;
+$color-input-background: $color-white;
+$color-input-border-color: $color-grey-primary;
+$color-input-focus-border-color: $color-green-one;
+$color-input-disabled-background: $color-grey-concrete;
+$color-input-disabled-text-color: $color-grey-corduroy;
+$color-fieldset-legend-fg: $color-green-secondary;
+
+// Global alerts
+$color-global-alert-message-bg: $color-grey-ten !default;
+$color-global-alert-default: $color-green-one !default;
+$color-global-alert-warning: $color-yellow-light !default;
+$color-global-alert-error: $color-red-medium !default;
+
+// Search
+$color-search-border: $color-grey-light !default;
+$color-search-text: $color-grey-medium-dark !default;
+$color-search-input-background: $color-off-white !default;
+$color-search-button-focus-background: $color-green-secondary !default;
+$color-search-button-focus-foreground: $color-white !default;
+$color-header-buttons: $color-green-two !default;
+
+// Panels
+$color-panel-background: $color-grey-pale;
+$color-panel-footer-background: $color-white;
+
+// Borders
+$default-border-thin: 1px solid $color-grey-paleo;
+
+// Buttons
+$button-border-radius: 4px;
+$button-border-width: 3px;
+$button-padding-vertical: 12px;
+$button-padding-horizontal: 22px;
+$button-padding-small-square: 8px;
+
+$color-button-text: $color-black;
+$color-button-text-disabled: #666969;
+
+$color-button-default: $color-grey-normal;
+$color-button-default-active: #dce0e0;
+$color-button-default-disabled: #e8ebeb;
+
+$color-button-default-border: $color-grey-seven;
+$color-button-default-border-active: #b5b7b7;
+$color-button-default-border-disabled: #cfd1d1;
+
+$color-button-primary: $color-yellow-light;
+$color-button-primary-active: #edde74;
+$color-button-primary-disabled: #f2ebb2;
+
+$color-button-primary-border: $color-yellow-dark;
+$color-button-primary-border-active: #e1c260;
+$color-button-primary-border-disabled: #eddfb2;
+
+// Callout
+$color-callout-background: $color-green-pale;
+$color-callout-instructional-background: $color-grey-pale;
 
 // -------------- OTHER --------------- //
 
