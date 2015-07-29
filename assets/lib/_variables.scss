@@ -206,9 +206,11 @@ $color-inset-block-border: $color-blue-medium;
 $input-height: $baseline-unit*5;
 $color-input-text-color: $color-black;
 $color-input-background: $color-white;
+$color-input-border-color: $color-grey-primary;
 $color-input-focus-border-color: $color-green-one;
 $color-input-disabled-background: $color-grey-concrete;
 $color-input-disabled-text-color: $color-grey-corduroy;
+$color-fieldset-legend-fg: $color-green-secondary;
 
 // Global alerts
 $color-global-alert-message-bg: $color-grey-ten !default;
