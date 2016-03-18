@@ -15,28 +15,6 @@
   }
 }
 
-@mixin respond-to-height($min-height: false, $max-height: false) {
-  @if $responsive {
-    @if $min-height and $max-height {
-      @media screen and (min-height: $min-height) and (max-height: $max-height) {
-        @content;
-      }
-    } @else {
-      @if $min-height {
-        @media screen and (min-height: $min-height) {
-          @content;
-        }
-      }
-
-      @if $max-height {
-        @media screen and (max-height: $max-height) {
-          @content;
-        }
-      }
-    }
-  }
-}
-
 @mixin device-pixel-ratio($ratio: 2) {
   @media only screen and (-webkit-min-device-pixel-ratio: $ratio),
   only screen and (min--moz-device-pixel-ratio: $ratio),
