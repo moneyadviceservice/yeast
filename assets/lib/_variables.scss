@@ -174,7 +174,6 @@ $color-newsletter: $color-green-primary;
 $color-newsletter-active: $color-green-secondary;
 
 // Social Media
-// These over-ride styles set in Dough
 $color-social-sharing-heading: $color-black !default;
 $color-facebook: #3C5A99 !default;
 $color-facebook-hover: #214782 !default;
@@ -184,6 +183,15 @@ $color-email: #efba41 !default;
 $color-email-hover: #e8ae28 !default;
 $color-youtube: #cd201f !default;
 $color-youtube-hover: #B61B1B !default;
+
+// Focus
+$color-focus-bg: $color-yellow-dark !default;
+$color-focus-fg: $color-true-black !default;
+$color-input-focus-border-color: $color-focus-bg !default;
+
+@mixin focus-outline {
+  outline: solid $baseline-unit/2 $color-focus-bg;
+}
 
 
 // -------------- OTHER --------------- //
