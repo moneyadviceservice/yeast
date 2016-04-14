@@ -24,9 +24,16 @@
 
   &:hover,
   &:focus {
-    outline: none;
-    color: $color-link-nav;
     text-decoration: underline;
+  }
+
+  &:hover {
+    outline: 0;
+    color: $color-link-nav;
+  }
+
+  &:focus {
+    color: $color-focus-fg;
   }
 }
 
