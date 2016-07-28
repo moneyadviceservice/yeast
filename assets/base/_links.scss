@@ -37,3 +37,10 @@ a {
     text-decoration: none;
   }
 }
+
+%in-body-link {
+  text-decoration: underline;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
