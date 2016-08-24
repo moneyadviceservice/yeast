@@ -48,10 +48,6 @@ select {
   }
 }
 
-button.search__clear:focus {
-  outline: none;
-}
-
 textarea {
   @extend %form-input;
 }
