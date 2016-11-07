@@ -204,12 +204,6 @@
       text-transform: uppercase;
       text-decoration: none;
       @include body(18, 18);
-
-      @include respond-to($mq-xl) {
-        position: absolute;
-        top: 50%;
-        margin-top: -21px;
-      }
     }
 
     .footer-primary__blog-link:hover {
