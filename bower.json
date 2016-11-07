@@ -1,9 +1,12 @@
 {
   "name": "yeast",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/moneyadviceservice/yeast",
   "authors": [
-    "Ben Barnett <ben.barnett@moneyadviceservice.org.uk>"
+    "Ben Barnett <ben.barnett@moneyadviceservice.org.uk>",
+    "Matt Saywell <matt.saywell@moneyadviceservice.org.uk>",
+    "David Trussler <david.trussler@moneyadviceservice.org.uk>",
+    "John Player <john.player@moneyadviceservice.org.uk>"
   ],
   "description": "Shared SASS mixins, variables and functions for MAS",
   "license": "MIT",
