@@ -21,6 +21,9 @@ When updating Yeast, update the version in bower.json, and also _create a Git ta
 
 This will make the version available in the Bower registry.
 
+Then, update the `bower.json.erb` file in any projects where you need to pull in the latest Yeast. Initially this is being set to pull in the latest 1.x.x version of Yeast. From Frontend:
+
+`"yeast": "^1.0.0",`
 
 ## Project structure:
 
