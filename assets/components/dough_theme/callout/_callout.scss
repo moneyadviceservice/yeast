@@ -4,18 +4,26 @@
 //
 // Styleguide Call out
 
+$callout-border-top-height: 45px;
+
 %callout-icon {
+  @include body(22, 30);
   border-radius: 50%;
   display: inline-block;
+  vertical-align: middle;
   height: 30px;
   width: 30px;
   background: white;
   margin-right: $baseline-unit;
+  font-weight: 700;
+  text-align: center;
 }
 
 .callout {
+  position: relative;
   margin: $baseline-unit*2 0;
   border: 2px solid $color-callout-general;
+  border-top: $callout-border-top-height solid $color-callout-general;
   clear: right;
 
   h3 {
@@ -23,15 +31,22 @@
     color: white;
     background: $color-callout-general;
     margin: 0;
+    margin-top: -$callout-border-top-height;
     padding: $baseline-unit $baseline-unit $baseline-unit $baseline-unit*3;
 
     &:before {
       @extend %callout-icon;
       content: '?';
-      font-weight: 700;
-      text-align: center;
       color: $color-callout-general;
     }
+  }
+
+  p:first-child:before {
+    @extend %callout-icon;
+    content: '?';
+    color: $color-callout-general;
+    position: absolute;
+    top: -$callout-border-top-height + 7px;
   }
 
   p {
@@ -51,6 +66,7 @@
 
 .callout--tool {
   border: 2px solid $color-callout-tool;
+  border-top: $callout-border-top-height solid $color-callout-tool;
   h3 {
     background: $color-callout-tool;
     &:before {
@@ -58,6 +74,9 @@
       content: '';
       vertical-align: middle;
     }
+  }
+  p:first-child:before {
+    content: " ";
   }
 }
 
