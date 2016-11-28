@@ -49,6 +49,18 @@
   }
 }
 
+.callout--tool {
+  border: 2px solid $color-callout-tool;
+  h3 {
+    background: $color-callout-tool;
+    &:before {
+      @extend %callout-icon;
+      content: '';
+      vertical-align: middle;
+    }
+  }
+}
+
 .callout--instructional {
   background-color: $color-panel-background;
 }
