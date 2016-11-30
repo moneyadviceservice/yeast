@@ -4,32 +4,81 @@
 //
 // Styleguide Call out
 
+$callout-border-top-height: 42px;
+
 .callout {
-  padding: $baseline-unit*3 0 0 0;
-  margin: $baseline-unit*4 0;
-  border-radius: 5px;
-  background-color: $color-callout-background;
+  position: relative;
+  margin: $baseline-unit*2 0;
+  border: 2px solid $color-callout-general;
   clear: right;
 
   h3 {
-    @extend %heading-extra-small;
-    margin: 0 $baseline-unit*3 $baseline-unit;
-    text-transform: capitalize;
+    @extend %heading-small;
+    text-indent: $baseline-unit*6;
+    color: white;
+    background: $color-callout-general;
+    margin: 0;
+    padding: $baseline-unit;
+  }
+
+  span.callout__icon + p {
+    margin-top: $callout-border-top-height + 12px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: $callout-border-top-height;
+      background: $color-callout-general;
+    }
   }
 
   p {
     @extend %type-callout;
-    margin: 0 $baseline-unit*3 $baseline-unit*3 $baseline-unit*3;
+    margin: $baseline-unit*2;
   }
 
   .editorial & {
-
     @include respond-to($mq-l) {
       @include column(3.5, 7);
       float: right;
       margin-bottom: $baseline-unit*2;
     }
   }
+}
+
+.callout--tool {
+  border: 2px solid $color-callout-tool;
+  h3 {
+    background: $color-callout-tool;
+  }
+  span.callout__icon + p:before {
+    background: $color-callout-tool;
+  }
+}
+
+.callout__icon {
+  @include body(22, 30);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 32px;
+  width: 32px;
+  z-index: 1;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: $color-callout-general;
+}
+
+.callout__tool-icon {
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  left: 0;
+  bottom: 0;
 }
 
 .callout--instructional {
