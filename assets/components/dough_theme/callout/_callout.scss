@@ -9,16 +9,32 @@ $callout-border-top-height: 42px;
 .callout {
   position: relative;
   margin: $baseline-unit*2 0;
-  border: 2px solid $color-callout-general;
-  clear: right;
 
   h3 {
     @extend %heading-small;
+    padding: $baseline-unit;
+  }
+
+  p {
+    @extend %type-callout;
+    margin: $baseline-unit*2;
+  }
+
+  .editorial & {
+    clear: right;
+    @include respond-to($mq-l) {
+      @include column(3.5, 7);
+      float: right;
+      margin-bottom: $baseline-unit*2;
+    }
+  }
+}
+
+%callout--editorial {
+  h3 {
     text-indent: $baseline-unit*6;
     color: white;
-    background: $color-callout-general;
     margin: 0;
-    padding: $baseline-unit;
   }
 
   span.callout__icon + p {
@@ -33,22 +49,18 @@ $callout-border-top-height: 42px;
       background: $color-callout-general;
     }
   }
+}
 
-  p {
-    @extend %type-callout;
-    margin: $baseline-unit*2;
-  }
-
-  .editorial & {
-    @include respond-to($mq-l) {
-      @include column(3.5, 7);
-      float: right;
-      margin-bottom: $baseline-unit*2;
-    }
+.callout--tip {
+  @extend %callout--editorial;
+  border: 2px solid $color-callout-general;
+  h3 {
+    background: $color-callout-general;
   }
 }
 
 .callout--tool {
+  @extend %callout--editorial;
   border: 2px solid $color-callout-tool;
   h3 {
     background: $color-callout-tool;
@@ -82,5 +94,6 @@ $callout-border-top-height: 42px;
 }
 
 .callout--instructional {
+  border: none;
   background-color: $color-panel-background;
 }
