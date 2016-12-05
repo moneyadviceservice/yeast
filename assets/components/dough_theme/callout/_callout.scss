@@ -30,7 +30,7 @@ $callout-border-top-height: 42px;
   }
 }
 
-.callout--editorial {
+%callout--editorial {
   h3 {
     text-indent: $baseline-unit*6;
     color: white;
@@ -52,6 +52,7 @@ $callout-border-top-height: 42px;
 }
 
 .callout--tip {
+  @extend %callout--editorial;
   border: 2px solid $color-callout-general;
   h3 {
     background: $color-callout-general;
@@ -59,6 +60,7 @@ $callout-border-top-height: 42px;
 }
 
 .callout--tool {
+  @extend %callout--editorial;
   border: 2px solid $color-callout-tool;
   h3 {
     background: $color-callout-tool;
