@@ -9,6 +9,8 @@ $callout-border-top-height: 42px;
 .callout {
   position: relative;
   margin: $baseline-unit*2 0;
+  border-radius: 5px;
+  background-color: $color-callout-background;
 
   h3 {
     @extend %heading-small;
@@ -31,6 +33,9 @@ $callout-border-top-height: 42px;
 }
 
 %callout--editorial {
+  border-radius: 0;
+  background: none;
+
   h3 {
     text-indent: $baseline-unit*6;
     color: white;
