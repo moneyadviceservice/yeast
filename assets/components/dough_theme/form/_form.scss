@@ -85,10 +85,6 @@
   @extend %form-input;
 }
 
-.form__input-container .form__input:focus ~ .form__input-outline {
-  @extend %form-input-focus-container
-}
-
 .form__input--small {
   max-width: 80px;
 }
