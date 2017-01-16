@@ -148,6 +148,12 @@ $header-height: $baseline-unit*9;
     }
   }
 
+  .mobile-nav__link--menu {
+    @include respond-to($mq-m) {
+      display: none;
+    }
+  }
+
   .no-js & .mobile-nav__item--search {
     display: none;
   }
