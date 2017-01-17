@@ -140,7 +140,17 @@ $header-height: $baseline-unit*9;
     right: 0;
 
     @include respond-to($mq-m) {
+      top: 3px;
+    }
+
+    @include respond-to($mq-l) {
       display: none;
+    }
+
+    @include respond-to($mq-m) {
+      .mobile-nav__link--menu {
+        display: none;
+      }
     }
   }
 
