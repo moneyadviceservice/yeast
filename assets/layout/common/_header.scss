@@ -23,14 +23,9 @@ $header-height: $baseline-unit*9;
     position: relative;
 
     @include respond-to($mq-m) {
-      @include column(10);
+      @include column(7);
       vertical-align: top;
       margin-top: 12px;
-      margin-bottom: $baseline-unit*2;
-    }
-
-    @include respond-to($mq-l) {
-      @include column(8);
       margin-bottom: $baseline-unit;
     }
 
@@ -44,10 +39,10 @@ $header-height: $baseline-unit*9;
   }
 
   .authentication {
-    @include column(1);
+    @include column(2);
     display: none;
 
-    @include respond-to($mq-l) {
+    @include respond-to($mq-m) {
       @include inline-block;
     }
 
@@ -111,7 +106,7 @@ $header-height: $baseline-unit*9;
     clear: both;
     padding: $baseline-unit*3 $baseline-unit;
 
-    @include respond-to($mq-l) {
+    @include respond-to($mq-m) {
       @include column(3);
       border: 0;
       background-color: transparent;
@@ -119,6 +114,7 @@ $header-height: $baseline-unit*9;
       margin-top: $baseline-unit*2;
       margin-bottom: $baseline-unit*2;
       padding: 0;
+      float: right;
 
       .search__input {
         border: 0;
@@ -185,7 +181,7 @@ $header-height: $baseline-unit*9;
       display: block;
     }
 
-    @include respond-to($mq-l) {
+    @include respond-to($mq-m) {
       display: block;
     }
   }
@@ -236,7 +232,7 @@ $header-height: $baseline-unit*9;
 .l-header__strapline {
   display: none;
 
-  @include respond-to($mq-m) {
+  @include respond-to($mq-l) {
     @include paragraph(14, 24);
     border-left: 1px solid rgb(255,255,255);
     color: $color-white;
