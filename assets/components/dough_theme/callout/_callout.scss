@@ -12,7 +12,7 @@ $callout-border-top-height: 42px;
   border-radius: 5px;
   background-color: $color-callout-background;
 
-  h3 {
+  h3, .callout__heading {
     @extend %heading-small;
     padding: $baseline-unit;
   }
@@ -36,7 +36,7 @@ $callout-border-top-height: 42px;
   border-radius: 0;
   background: none;
 
-  h3 {
+  h3, .callout__heading {
     text-indent: $baseline-unit*6;
     color: white;
     margin: 0;
@@ -59,7 +59,7 @@ $callout-border-top-height: 42px;
 .callout--tip {
   @extend %callout--editorial;
   border: 2px solid $color-callout-general;
-  h3 {
+  h3, .callout__heading {
     background: $color-callout-general;
   }
 }
