@@ -34,6 +34,15 @@ textarea {
   }
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  &:hover {
+    @include form-input-focus;
+    @include form-input-focus-outline;
+    cursor: pointer;
+  }
+}
+
 input[type="search"] {
   &:focus {
     outline-offset: -1px;
