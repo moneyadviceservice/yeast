@@ -1,9 +1,8 @@
 .l-context-bar {
-  @include respond-to($mq-xs, $mq-s-max) {
-    @include visually-hidden;
-  }
+  display: none;
 
   @include respond-to($mq-m) {
+    display: block;
     background-color: $breadcrumbs-background-color;
     padding-top: $baseline-unit*3;
     padding-bottom: $baseline-unit*3;
