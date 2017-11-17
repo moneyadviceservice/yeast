@@ -3,3 +3,19 @@
     border-color: $color-blue-bright;
   }
 }
+
+.popup-tip__content {
+  .js & {
+    @include respond-to($mq-m) {
+      padding: $baseline-unit;
+    }
+  }
+}
+
+.popup-tip__title--no-js {
+  display: inline;
+
+  .js & {
+    display: none;
+  }
+}
