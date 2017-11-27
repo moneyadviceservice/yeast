@@ -3,11 +3,13 @@
   font-size: 1rem;
   font-style: italic;
   font-weight: bold;
-  color: $color-white;
-  display: inline-block;
+  line-height: 24px;
+  color: $color-green-secondary;
+  padding: 0;
   width: 25px;
   height: 25px;
-  background-color: $color-green-secondary;
+  background-color: transparentize($color-green-secondary, 0.95);
+  border: solid 1px $color-green-secondary;
   border-radius: 50%;
 }
 
