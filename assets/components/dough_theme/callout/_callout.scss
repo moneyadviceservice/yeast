@@ -75,6 +75,11 @@ $callout-border-top-height: 42px;
   }
 }
 
+.callout--warning {
+  @extend .callout;
+  background-color: $color-callout-warning;
+}
+
 .callout__icon {
   @include body(22, 30);
   position: absolute;
