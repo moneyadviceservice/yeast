@@ -76,7 +76,6 @@ $callout-border-top-height: 42px;
 }
 
 .callout--warning {
-  @extend .callout;
   background-color: $color-callout-warning;
 }
 
