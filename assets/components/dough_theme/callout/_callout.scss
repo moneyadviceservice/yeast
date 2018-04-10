@@ -11,6 +11,7 @@ $callout-border-top-height: 42px;
   margin: $baseline-unit*2 0;
   border-radius: 5px;
   background-color: $color-callout-background;
+  z-index: 1;
 
   h3, .callout__heading {
     @extend %heading-small;
