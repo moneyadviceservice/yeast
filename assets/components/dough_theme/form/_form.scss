@@ -99,7 +99,8 @@
   height: 30px; // custom height
   border: 1px solid; // $greyscale4; colour is a pacs variable
   padding: 0 8px;
-  background: #fff image-url('dough/assets/images/triangle.png') right 10px center no-repeat;
+  // background: #fff image-url('dough/assets/images/triangle.png') right 10px center no-repeat;
+  background: #fff image-url('dough/assets/images/icon_sprite.svg#svg-icon--select-arrow') right 10px center no-repeat;
   background-size: 15px 7px;
   -webkit-appearance: none;
   -moz-appearance: none;
