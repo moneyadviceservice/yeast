@@ -110,4 +110,9 @@
   .svg & {
     background-image: image-url('dough/assets/images/icon_sprite.svg#svg-icon--select-arrow');
   }
+
+  // Hides native dropdown arrow in IE
+  &::-ms-expand {
+    display: none;
+  }
 }
