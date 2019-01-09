@@ -92,3 +92,22 @@
 .form__list {
   @include body(16, 24);
 }
+
+.form__custom-select {
+  border: 1px solid;
+  padding: 0 8px;
+  background: #fff right 10px center no-repeat;
+  background-image: image-url('dough/assets/images/select-arrow.png');
+  background-size: 15px 7px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  .svg & {
+    background-image: image-url('dough/assets/images/icon_sprite.svg#svg-icon--select-arrow');
+  }
+
+  // Hides native dropdown arrow in IE
+  &::-ms-expand {
+    display: none;
+  }
+}
