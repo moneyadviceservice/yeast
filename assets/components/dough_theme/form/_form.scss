@@ -96,16 +96,13 @@
 .form__custom-select {
   width: 250px;
   // This is copied from budget planner
-  height: 30px; // custom height
-  border: 1px solid; // $greyscale4; colour is a pacs variable
+  border: 1px solid;
   padding: 0 8px;
   background: #fff right 10px center no-repeat;
   background-image: image-url('dough/assets/images/select-arrow.png');
   background-size: 15px 7px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  // Pacs custom
-  // font-weight: 400;
 
   .svg & {
     background-image: image-url('dough/assets/images/icon_sprite.svg#svg-icon--select-arrow');
