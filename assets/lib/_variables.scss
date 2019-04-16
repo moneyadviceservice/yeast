@@ -13,18 +13,18 @@ $color-black-two: #4e4f4f;
 $color-grey-primary: #515151;
 
 $color-green-primary: #428513;
-$color-green-secondary: #006A00;
+$color-green-secondary: #006a00;
 $color-green-tertiary: #115329;
 $color-green-quaternary: #337018;
 $color-green-quinary: #2d6a1e;
-$color-green-six: #76B72A;
+$color-green-six: #76b72a;
 
 $color-green-paler: #f5f7f8;
 $color-green-pale: #f7fbec;
 $color-green-light: #b9dd48;
 $color-green-medium: #81c724;
 $color-green-bright: #adcf3f;
-$color-green-dark: #2F6500;
+$color-green-dark: #2f6500;
 $color-green-one: #77bf24;
 $color-green-two: #20600f;
 $color-green-three: #f7fbed;
@@ -32,7 +32,7 @@ $color-green-three: #f7fbed;
 $color-teal-light: #109e89;
 $color-teal-dark: #0e7f6c;
 
-$color-turquoise: #24aFA8;
+$color-turquoise: #24afa8;
 
 $color-blue-pale: #ebf2f5;
 $color-blue-light: #e6f2f7;
@@ -56,8 +56,8 @@ $color-grey-medium-dark: $color-grey-primary;
 $color-grey-medium: #526675;
 $color-grey-dark: #394752;
 
-$color-grey-corduroy: #686C6C;
-$color-grey-concrete: #F3F3F3;
+$color-grey-corduroy: #686c6c;
+$color-grey-concrete: #f3f3f3;
 
 $color-bluegrey-dark: #96b4c0;
 $color-bluegrey-medium: #cbdae0;
@@ -78,7 +78,7 @@ $color-orange-dark: #c95d2d;
 $color-yellow-light: #fed40b;
 $color-yellow-dark: #daaf2d;
 
-$color-sfgb-blue: #1d558e;
+$color-maps-blue: #143960;
 
 // -------------- COLORS --------------- //
 
@@ -179,14 +179,14 @@ $color-newsletter-active: $color-green-secondary;
 
 // Social Media
 $color-social-sharing-heading: $color-black !default;
-$color-facebook: #3C5A99 !default;
+$color-facebook: #3c5a99 !default;
 $color-facebook-hover: #214782 !default;
-$color-twitter: #2BA9E1 !default;
+$color-twitter: #2ba9e1 !default;
 $color-twitter-hover: #1991b8 !default;
 $color-email: #efba41 !default;
 $color-email-hover: #e8ae28 !default;
 $color-youtube: #cd201f !default;
-$color-youtube-hover: #B61B1B !default;
+$color-youtube-hover: #b61b1b !default;
 
 // Focus
 $color-focus-bg: $color-yellow-dark !default;
@@ -196,7 +196,6 @@ $color-input-focus-border-color: $color-focus-bg !default;
 @mixin focus-outline {
   outline: solid $baseline-unit/2 $color-focus-bg;
 }
-
 
 // -------------- OTHER --------------- //
 
