@@ -429,9 +429,44 @@
   }
 }
 
-/* ACCESSIBILITY */
-.accessibility-feedback-link .icon--accessibility {
-  position: relative;
-  top: 2px;
-  margin-right: 4px;
+/* MPS TEXT AND LOGO */
+.footer-secondary__mps-text {
+  display: inline-block;
+  & > * {
+    display: block;
+  }
+  span {
+    line-height: 1rem;
+  }
 }
+.footer-secondary__mps-link {
+  margin-top: $baseline-unit*2;
+
+  a:hover {
+    outline: none;
+    text-decoration: none;
+  }
+
+  .mps-logo__img {
+    height: 38px;
+    margin-left: 5px;
+  }
+}
+
+/* ACCESSIBILITY */
+.accessibility-feedback-link {
+  .icon--accessibility {
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+  }
+  
+  button {
+    background: transparent;
+    border: 0;
+    @include body(14, 24);
+    padding: 0;
+  }
+}
+
+
