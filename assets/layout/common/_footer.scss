@@ -330,22 +330,6 @@
   color: $color-text-icon;
   background-color: $color-maps-blue;
   position: relative; // fix white space issue in Safari
-
-  .l-footer-authentication-link {
-    @include respond-to($mq-xl) {
-      display: none;
-    }
-
-    > form {
-      @include inline-block;
-    }
-  }
-
-  .l-language-link {
-    @include respond-to($mq-l) {
-      display: none;
-    }
-  }
 }
 
 .l-footer-secondary--inner {
@@ -414,18 +398,12 @@
   // min-width 480px
   @include respond-to($mq-s) {
     
-    padding-right: $baseline-unit*3;
-    margin-right: $baseline-unit*3;
+    padding-right: $baseline-unit*2;
+    margin-right: $baseline-unit;
 
     &:last-child {
       margin-right: 0;
     }
-
-    &:nth-child(n+2) {
-      padding-right: 0;
-      border-right: none;
-    }
-
   }
 }
 
