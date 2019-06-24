@@ -4,6 +4,11 @@
   height: auto;
   margin-top: 40px;
   border-top: $default-border-thin;
+  display: flex;
+  flex-direction: column;
+  @include respond-to($mq-l) {
+    flex-direction: row;
+  }
 }
 
 .l-contact-panels--no-border-top {
@@ -23,5 +28,9 @@
 
   @include respond-to($mq-l) {
     @include column(4);
+    display: flex;
+    & > * {
+      flex-grow: 2;
+    }
   }
 }
