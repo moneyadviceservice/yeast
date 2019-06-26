@@ -6,8 +6,19 @@
   border-top: $default-border-thin;
   display: flex;
   flex-direction: column;
+
   @include respond-to($mq-l) {
     flex-direction: row;
+
+    & > *:not(:last-child):after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -5.7%;
+      border-right: 1px solid $color-newsletter-input-border;
+      width: 1px;
+      height: 100%;
+    }
   }
 }
 
@@ -29,7 +40,9 @@
   @include respond-to($mq-l) {
     @include column(4);
     display: flex;
-    & > * {
+    position: relative;
+
+    &>* {
       flex-grow: 2;
     }
   }
