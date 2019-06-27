@@ -4,17 +4,20 @@
   height: auto;
   margin-top: 40px;
   border-top: $default-border-thin;
+  display: flex;
+  flex-direction: column;
 
   @include respond-to($mq-l) {
-    &:after {
-      content: "";
+    flex-direction: row;
+
+    & > *:not(:last-child):after {
+      content: '';
       position: absolute;
       top: 0;
-      bottom: $baseline-unit*4;
-      left: 50%;
+      right: -5.7%;
       border-right: 1px solid $color-newsletter-input-border;
       width: 1px;
-      min-height: 400px;
+      height: 100%;
     }
   }
 }
@@ -35,6 +38,12 @@
   display: inline-block;
 
   @include respond-to($mq-l) {
-    @include column(6);
+    @include column(4);
+    display: flex;
+    position: relative;
+
+    &>* {
+      flex-grow: 2;
+    }
   }
 }
