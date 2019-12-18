@@ -14,6 +14,11 @@
 
   a {
     color: $color-white;
+
+    &:focus,
+    &:hover {
+      background: transparent;
+    }
   }
 }
 
@@ -21,12 +26,15 @@
   @include column(12);
 
   height: $maps_bannerHeight_s;
+  padding: $maps_bannerMargin 0;
 
   .l-maps_banner--home & {
     height: $maps_bannerHeight_m;
+    padding: $maps_bannerMargin 0;
 
     @include respond-to($mq-l) {
       height: $maps_bannerHeight_l;
+      padding: $maps_bannerMargin 0;
     }
   }
 }
@@ -44,14 +52,14 @@
   margin-left: 10px;
   background-size: $width_s $height_s;
   background-repeat: no-repeat;
-  background-image: image_url('mps-logo-en.png');
+  background-image: image_url('yeast/assets/images/mps-logo-en.png');
 
   .svg & {
     background-image: image_url('yeast/assets/images/svgs/MAPS_en.svg');
   }
 
   .theme-cy & {
-    background-image: image_url('mps-logo-cy.png');
+    background-image: image_url('yeast/assets/images/mps-logo-cy.png');
   }
 
   .l-maps_banner--home & {
