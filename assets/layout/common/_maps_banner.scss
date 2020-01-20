@@ -1,3 +1,10 @@
+$height_s: $maps_bannerHeight_s - ($maps_bannerMargin * 2);
+$height_m: $maps_bannerHeight_m - ($maps_bannerMargin * 4);
+$height_l: $maps_bannerHeight_l - ($maps_bannerMargin * 4);
+$width_s: $height_s / 202.23px * 634.92px;
+$width_m: $width_s * $height_m / $height_s;
+$width_l: $width_s * $height_l / $height_s;
+
 .l-maps_banner {
   position: fixed;
   width: 100%;
@@ -40,13 +47,6 @@
 }
 
 .maps_banner__mps-logo {
-  $height_s: $maps_bannerHeight_s - ($maps_bannerMargin * 2);
-  $height_m: $maps_bannerHeight_m - ($maps_bannerMargin * 4);
-  $height_l: $maps_bannerHeight_l - ($maps_bannerMargin * 4);
-  $width_s: $height_s / 202.23px * 634.92px;
-  $width_m: $width_s * $height_m / $height_s;
-  $width_l: $width_s * $height_l / $height_s;
-
   height: $height_s;
   width: $width_s;
   margin-left: 10px;
