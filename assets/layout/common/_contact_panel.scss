@@ -13,6 +13,15 @@
   flex-direction: column;
   align-items: center;
 
+  .smallprint {
+    display: none;
+    font-weight: bold;
+
+    .theme-cy & {
+      display: block;
+    }
+  }
+
   @include respond-to($mq-s) {
     padding: $baseline-unit*4 0;
   }
