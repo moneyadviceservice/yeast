@@ -1,0 +1,18 @@
+.popup-tip__button {
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 24px;
+  color: $color-green-secondary;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background-color: transparentize($color-green-secondary, 0.95);
+  border: solid 1px $color-green-secondary;
+  border-radius: 50%;
+}
+
+.popup-tip__close {
+  border-color: $color-grey-dark;
+}
