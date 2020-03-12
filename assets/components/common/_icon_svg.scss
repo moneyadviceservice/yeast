@@ -154,11 +154,11 @@ $height: 203.22/158.85*$width;
   background-repeat: no-repeat;
 
   @include respond-to($mq-s) {
-    background-image: image_url('yeast/assets/images/PLC_CES_80-102.png');
+    // background-image: image_url('yeast/assets/images/PLC_CES_80-102.png');
     display: block;
 
     .svg & {
-      background-image: image_url('yeast/assets/images/svgs/plc-ces.svg');
+      // background-image: image_url('yeast/assets/images/svgs/plc-ces.svg');
     }
   }
 }
