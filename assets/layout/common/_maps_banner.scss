@@ -52,14 +52,14 @@
   margin-left: 10px;
   background-size: $width_s $height_s;
   background-repeat: no-repeat;
-  // background-image: image_url('yeast/assets/images/mps-logo-en.png');
+  background-image: url('../../images/mps-logo-en.png');
 
   .svg & {
-    // background-image: image_url('yeast/assets/images/svgs/MAPS_en.svg');
+    background-image: url('../../images/svgs/MAPS_en.svg');
   }
 
   .theme-cy & {
-    // background-image: image_url('yeast/assets/images/mps-logo-cy.png');
+    background-image: url('../../images/mps-logo-cy.png');
   }
 
   .l-maps_banner--home & {
