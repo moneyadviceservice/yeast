@@ -189,7 +189,7 @@ $maps_bannerHeight_l: 110px;
     }
   }
 
-  .js & .l-search {
+  body[data-dough-component-loader-all-loaded="yes"] & .l-search {
     display: none;
 
     &.is-on {
