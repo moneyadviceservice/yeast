@@ -23,11 +23,11 @@
 
 	&[data-dough-covid-banner-initialised="yes"] {
 		display: block; 
-	}
-}
 
-.covid_banner--hidden {
-	display: none;
+		&.covid_banner--hidden {
+			display: none;
+		}
+	}
 }
 
 .covid_banner__content {
