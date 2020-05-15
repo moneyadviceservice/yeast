@@ -1,4 +1,5 @@
 .covid_banner {
+	display: none; 
 	position: fixed;
 	width: 100%;
 	bottom: $baseline-unit*2;
@@ -19,10 +20,14 @@
 	&.covid_banner--raised {
 		bottom: 55px;
 	}
-}
 
-.covid_banner--hidden {
-	display: none;
+	&[data-dough-covid-banner-initialised="yes"] {
+		display: block; 
+
+		&.covid_banner--hidden {
+			display: none;
+		}
+	}
 }
 
 .covid_banner__content {
