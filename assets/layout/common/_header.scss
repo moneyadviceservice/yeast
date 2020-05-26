@@ -27,10 +27,6 @@ $maps_bannerHeight_l: 110px;
     }
   }
 
-  .mobile-nav {
-    display: none;
-  }
-
   .mas-logo {
     @include column(4);
     margin-bottom: $baseline-unit*2;
@@ -157,11 +153,11 @@ $maps_bannerHeight_l: 110px;
     @include respond-to($mq-l) {
       display: none;
     }
+  }
 
+  .mobile-nav__link--menu {
     @include respond-to($mq-m) {
-      .mobile-nav__link--menu {
-        display: none;
-      }
+      display: none;
     }
   }
 
