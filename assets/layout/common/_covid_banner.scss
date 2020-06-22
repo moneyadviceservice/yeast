@@ -1,20 +1,20 @@
 .covid_banner {
-	display: none; 
+	display: none;
 	position: fixed;
 	width: 100%;
 	bottom: $baseline-unit*2;
-	padding-right: calc(76px + #{$default-gutter * 4}); 
-	padding-left: $default-gutter; 
-	z-index: 5; 
+	padding-right: calc(76px + #{$default-gutter * 4});
+	padding-left: $default-gutter;
+	z-index: 5;
 	transition: bottom .4s;
 
 	@include respond-to($mq-s) {
-		padding-right: calc(76px + #{$default-gutter * 2}); 		
+		padding-right: calc(76px + #{$default-gutter * 2});
 	}
 
 	@include respond-to($mq-l) {
-		padding-left: 0; 
-		padding-right: 0; 
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	&.covid_banner--raised {
@@ -22,7 +22,7 @@
 	}
 
 	&[data-dough-covid-banner-initialised="yes"] {
-		display: block; 
+		display: block;
 
 		&.covid_banner--hidden {
 			display: none;
@@ -31,7 +31,7 @@
 }
 
 .covid_banner__content {
-	width: 100%; 
+	width: 100%;
 	padding: 0 $default-gutter * 2;
 	border-radius: .15em;
 	background: $color-yellow-light;
@@ -42,52 +42,64 @@
 	}
 
 	@include respond-to($mq-l) {
-		@include column(12); 
+		@include column(12);
 	}
 }
 
 .covid_banner__inner {
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 70px; 
-	position: relative; 
+	height: 70px;
+	position: relative;
 }
 
 .covid_banner__close {
-	display: none; 
-	position: absolute; 
+	display: none;
+	position: absolute;
 	top: $baseline-unit * 2;
-	right: 0; 
+	right: 0;
 
 	.js & {
-		display: block; 
+		display: block;
 	}
 }
 
 .svg-icon--mobile-close-box {
-	width: 12.291px; 
-	height: 11.878px; 
+	width: 12.291px;
+	height: 11.878px;
 }
 
-.covid_banner__head, 
+.covid_banner__head,
 .covid_banner__body {
 	margin: 0;
-	line-height: 1.2; 
+	line-height: 1.2;
+}
+
+.covid_banner__head{
+
+    .covid_banner__title {
+        font-weight: bold;
+        padding-right: 5px;
+        float: left;
+    }
+
+    .covid_banner__description {
+        font-weight: normal;
+    }
 }
 
 .covid_banner__head {
-	font-size: 1rem; 
-	font-weight: bold; 
-	padding-right: calc(12.291px + #{$default-gutter * 2}); 
+	font-size: 1rem;
+	padding-right: calc(12.291px + #{$default-gutter * 2});
 
 	@include respond-to($mq-s) {
-		font-size: 1.125rem; 
+		font-size: 1.125rem;
 	}
 }
 
 .covid_banner__body {
-	font-size: 0.75rem;  
+	font-size: 0.75rem;
 
 	a {
 		text-decoration: underline;
