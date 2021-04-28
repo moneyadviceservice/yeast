@@ -1,0 +1,78 @@
+.l-mh_banner {
+  background: $color-mh-blue;
+  padding: $baseline-unit * 2 0;
+}
+
+.l-mh_banner__content {
+  @include column(12);  
+
+  color: $color-white;
+
+  @include respond-to($mq-s) {
+    position: relative; 
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.mh_banner__header, 
+.mh_banner__body {
+  margin: 0;
+
+  @include respond-to($mq-s) {
+    @include column(9); 
+  }
+
+  @include respond-to($mq-l) {
+    @include column(10); 
+  }
+
+  @include respond-to($mq-xl) {
+    @include column(11); 
+  }
+}
+
+.mh_banner__header {
+  font-size: 1.125rem; 
+  font-weight: bold; 
+  margin-bottom: $baseline-unit; 
+}
+
+.mh_banner__logo {
+  $logo-height: 25;
+
+  height: #{$logo-height}px;
+  margin-top: $baseline-unit * 2;
+  background-repeat: no-repeat; 
+  background-size: cover;
+
+  [lang="en"] & {
+    width: #{$logo-height / 25 * 179}px;
+    background-image: image_url('yeast/assets/images/svgs/mh-singleLine-en-white.svg');
+  }
+
+  [lang="cy"] & {
+    width: #{$logo-height / 25 * 170}px;
+    background-image: image_url('yeast/assets/images/svgs/mh-singleLine-cy-white.svg');
+  }
+
+  @include respond-to($mq-s) {
+    $logo-height: 48;
+
+    height: #{$logo-height}px;
+    position: absolute;
+    right: $default-gutter;
+    top: 0;
+    margin-top: 0;
+
+    [lang="en"] & {
+      width: #{$logo-height / 59 * 117}px;
+      background-image: image_url('yeast/assets/images/svgs/mh-en-white.svg');
+    }
+
+    [lang="cy"] & {
+      width: #{$logo-height / 55 * 104}px;
+      background-image: image_url('yeast/assets/images/svgs/mh-cy-white.svg');
+    }
+  }
+}
